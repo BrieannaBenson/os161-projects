@@ -460,6 +460,9 @@ static const char *testmenu[] = {
 	"[tt2] Thread test 2                 ",
 	"[tt3] Thread test 3                 ",
         "[dontpanic]A simple reminder        ",
+	"[utc] Unsafe counter test           ",
+        "[ltc] Locked counter test           ",
+        "[stc] Spinlock counter test         ",
 #if OPT_NET
 	"[net] Network test                  ",
 #endif
@@ -570,6 +573,9 @@ static struct {
 	{ "net",	nettest },
 #endif
         { "dontpanic",  threadtestmulti },
+	{ "utc",        unsafethreadcounter },
+        { "ltc",        lockthreadcounter },
+        { "stc",        spinthreadcounter },
 	{ "tt1",	threadtest },
 	{ "tt2",	threadtest2 },
 	{ "tt3",	threadtest3 },

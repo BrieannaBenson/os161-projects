@@ -55,6 +55,9 @@ int queuetest(int, char **);
 /* thread tests */
 int threadtest(int, char **);
 int threadtestmulti(int, char **);
+int unsafethreadcounter(int, char **);
+int lockthreadcounter(int, char **);
+int spinthreadcounter(int, char **);
 int threadtest2(int, char **);
 int threadtest3(int, char **);
 int semtest(int, char **);
